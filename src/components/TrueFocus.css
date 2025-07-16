@@ -1,0 +1,56 @@
+.focus-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.2em;
+}
+
+.focus-word {
+  position: relative;
+  font-size: inherit;
+  font-weight: inherit;
+  transition: filter 0.5s ease;
+}
+
+.focus-frame {
+  position: absolute;
+  pointer-events: none;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+.top-left {
+  top: -5px;
+  left: -5px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.top-right {
+  top: -5px;
+  right: -5px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.bottom-left {
+  bottom: -5px;
+  left: -5px;
+  border-right: none;
+  border-top: none;
+}
+
+.bottom-right {
+  bottom: -5px;
+  right: -5px;
+  border-left: none;
+  border-top: none;
+}
