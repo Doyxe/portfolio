@@ -13,45 +13,45 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const services = [
   {
-    name: "Web Development",
+    name: "Desarrollo Web",
     icon: <FaCode />,
     description:
-      "Custom-built websites with modern frameworks for optimal performance and scalability.",
+      "Sitios web personalizados con frameworks modernos para un rendimiento y escalabilidad óptimos.",
     highlights: ["React/Next.js", "Responsive Design", "API Integration"],
   },
   {
-    name: "Maintenance & Optimization",
+    name: "Mantenimiento y optimización",
     icon: <FaTools />,
     description:
-      "Proactive monitoring and performance tuning to keep your site at peak performance.",
+      "Monitoreo proactivo y ajuste de rendimiento para mantener tu sitio en su máximo rendimiento.",
     highlights: ["Performance Audits", "Security Updates", "Bug Fixes"],
   },
   {
-    name: "UX/UI Prototyping",
+    name: "Prototipado UX/UI",
     icon: <FaPencilRuler />,
     description:
-      "User-centered designs from wireframes to interactive prototypes.",
+      "Diseños centrados en el usuario, desde wireframes hasta prototipos interactivos.",
     highlights: ["Figma Designs", "User Flows", "Accessibility Checks"],
   },
   {
-    name: "Web Detailing",
+    name: "Detallado Web",
     icon: <FaPaintBrush />,
     description:
-      "Pixel-perfect implementation with smooth animations and transitions.",
+      "Implementación pixel-perfect con animaciones y transiciones fluidas.",
     highlights: ["CSS Animations", "Micro-interactions", "Cross-browser Testing"],
   },
   {
-    name: "Visual Design",
+    name: "Diseño Visual",
     icon: <FaPaintBrush />,
     description:
-      "Cohesive branding and visual assets for digital platforms.",
+      "Branding coherente y activos visuales para plataformas digitales.",
     highlights: ["Canva Graphics", "Social Media Assets", "Brand Guidelines"],
   },
   {
-    name: "SEO Optimization",
+    name: "Optimización SEO",
     icon: <FaSearch />,
     description:
-      "Technical and content optimizations to improve search visibility.",
+      "Optimización técnica y de contenidos para mejorar la visibilidad en buscadores.",
     highlights: ["Metadata", "Structured Data", "Performance SEO"],
   },
 ];
@@ -69,9 +69,9 @@ const WhatIDo = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2>My Services</h2>
+          <h2>Mis Servicios</h2>
           <p className="subtitle">
-            Comprehensive web solutions designed for <span>growth</span> and <span>performance</span>
+            Soluciones web integrales diseñadas para <span>crecimiento</span> y <span>rendimiento</span>.
           </p>
         </motion.div>
 

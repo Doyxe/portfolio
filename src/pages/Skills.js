@@ -24,38 +24,38 @@ const technologies = [
 
 const softSkills = [
   {
-    title: "Teamwork",
-    description: "Effective collaboration in group projects with clear communication and mutual respect.",
+    title: "Trabajo en Equipo",
+    description: "Colaboración efectiva en proyectos de equipo con comunicación clara y respeto mutuo.",
     icon: <FaUsers className="skill-icon" />,
     color: "120, 120, 120"
   },
   {
-    title: "Attention to Detail",
-    description: "Meticulous attention to every aspect of the project to ensure quality and consistency.",
+    title: "Atención al detalle",
+    description: "Atención meticulosa a cada aspecto del proyecto para garantizar la calidad y la coherencia.",
     icon: <FaSearch className="skill-icon" />,
     color: "120, 120, 120"
   },
   {
-    title: "Problem Solving",
-    description: "Analytical approach to identify and solve technical challenges efficiently.",
+    title: "Resolutor",
+    description: "Enfoque analítico para identificar y resolver desafíos técnicos de forma eficiente.",
     icon: <FaLightbulb className="skill-icon" />,
     color: "120, 120, 120"
   },
   {
-    title: "Adaptability",
-    description: "Ability to quickly adjust to new technologies and work environments.",
+    title: "Adaptabilidad",
+    description: "Capacidad para adaptarse rápidamente a nuevas tecnologías y entornos de trabajo.",
     icon: <FaSyncAlt className="skill-icon" />,
     color: "120, 120, 120"
   },
   {
-    title: "Effective Communication",
-    description: "Ability to express technical ideas clearly to different audiences.",
+    title: "Comunicación efectiva",
+    description: "Capacidad para comunicar ideas técnicas con claridad a distintos públicos.",
     icon: <FaComments className="skill-icon" />,
     color: "120, 120, 120"
   },
   {
-    title: "Time Management",
-    description: "Efficient organization to meet deadlines without compromising quality.",
+    title: "Manejo del tiempo",
+    description: "Organización eficiente para cumplir plazos sin comprometer la calidad.",
     icon: <FaClock className="skill-icon" />,
     color: "120, 120, 120"
   }
@@ -76,10 +76,10 @@ const Skills = () => {
   return (
     <StyledWrapper id="skills" $isSidebarOpen={isSidebarOpen}>
       <SkillsContainer>
-        <SectionTitle>My Skills</SectionTitle>
+        <SectionTitle>Mis Skills</SectionTitle>
         
         <SplitText
-          text="I organize my skills into Frontend, Backend, Design, and Databases — each one playing a key role in building modern, functional, and user-friendly web experiences."
+          text="Organizo mis habilidades en Frontend, Backend, Diseño y Bases de datos — cada una con un papel clave en la creación de experiencias web modernas, funcionales y fáciles de usar."
           className="skills-description"
           delay={60}
           fontsize={18}
@@ -116,7 +116,7 @@ const Skills = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Soft Skills & Work Approach
+            Soft Skills & Enfoque de Trabajo
           </SectionTitle>
           
           <SoftSkillsGrid>

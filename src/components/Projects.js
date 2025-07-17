@@ -36,8 +36,8 @@ const projectsData = [
     id: 1,
     title: "Hostal Biarritz",
     description:
-      "Landing page for a hostel located in Sol, Madrid. Built using HTML, CSS, JavaScript, and Bootstrap. Hosted on Vercel for fast deployment and performance.",
-    shortDescription: "Landing page for a hostel in Madrid...",
+      "Sitio web de presentación para un hostal ubicado en Sol, Madrid; construido con HTML, CSS, JavaScript y Bootstrap, y alojado en Vercel para un despliegue rápido y un rendimiento óptimo.",
+    shortDescription: "Sitio web para un hostal en Madrid...",
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaBootstrap />, <SiVercel />],
     link: "https://doyxe.github.io/hostalbiarritz/",
     github: "https://github.com/user/hostal-biarritz",
@@ -47,8 +47,8 @@ const projectsData = [
     id: 2,
     title: "Doyxe",
     description:
-      "Landing page for a web agency offering scalable and optimized websites. Built with HTML, CSS, JS, Bootstrap and integrated with EmailJS for real-time contact form submission.",
-    shortDescription: "Landing page for a web agency...",
+      "Sitio web de presentación para una agencia web que ofrece sitios web escalables y optimizados. Desarrollado con HTML, CSS, JavaScript y Bootstrap, e integrado con EmailJS para el envío en tiempo real del formulario de contacto.",
+    shortDescription: "Sitio web para agencia de desarrollo web...",
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaBootstrap />, <FaEnvelope />],
     link: "https://www.doyxe.com/",
     github: "https://github.com/user/doyxe",
@@ -58,8 +58,8 @@ const projectsData = [
     id: 3,
     title: "Sala 7",
     description:
-      "Landing page for a creative studio. Developed using HTML, CSS, JavaScript, and Bootstrap with responsive design and animation effects.",
-    shortDescription: "Creative studio landing page...",
+      "Sitio web de presentación para un estudio creativo, desarrollado con HTML, CSS, JavaScript y Bootstrap, con diseño responsive y efectos de animación.",
+    shortDescription: "Sitio web de presentación de un estudio creativo...",
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaBootstrap />],
     link: "https://doyxe.github.io/sala7/",
     github: "https://github.com/user/sala7",
@@ -69,8 +69,8 @@ const projectsData = [
     id: 4,
     title: "Sporta",
     description:
-      "Web application to manage amateur football teams. Built with React, Node.js, and MySQL for a complete stack solution. Includes statistics tracking and team communication.",
-    shortDescription: "Team management system for football clubs...",
+      "Aplicación web para la gestión de equipos de fútbol amateur. Desarrollada con React, Node.js y MySQL como solución full‑stack. Incluye seguimiento de estadísticas y comunicación entre los miembros del equipo.",
+    shortDescription: "Gestor de equipos de futbol de nivel amateur...",
     technologies: [<FaReact />, <FaNodeJs />, <SiMysql />],
     link: "https://sporta-manager.com",
     github: "https://github.com/user/sporta",
@@ -81,8 +81,8 @@ const projectsData = [
     id: 5,
     title: "InvestMySelf",
     description:
-      "Web application developed to manage savings, invest with the help of AI, and set purchase goals for objects.",
-    shortDescription: "Savings management system for new investors...",
+      "Aplicación web desarrollada para gestionar ahorros, realizar inversiones con ayuda de IA y establecer metas de compra de artículos.",
+    shortDescription: "Sistema de ahorros para principiantes...",
     technologies: [<FaReact />, <FaNodeJs />, <SiMysql />],
     link: "https://sporta-manager.com",
     github: "https://github.com/user/sporta",
@@ -99,7 +99,7 @@ const ProjectsSection = () => {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        Featured Projects
+        Proyectos destacados
       </SectionTitle>
       <ProjectsGrid>
         {projectsData.map((project) => (
@@ -161,11 +161,11 @@ const ProjectCard = ({ project }) => {
         >
           {isExpanded ? (
             <>
-              <FaChevronUp /> Show less
+              <FaChevronUp /> Mostrar menos
             </>
           ) : (
             <>
-              <FaChevronDown /> Show more
+              <FaChevronDown /> Mostrar más
             </>
           )}
         </ExpandButton>
@@ -176,14 +176,14 @@ const ProjectCard = ({ project }) => {
             target="_blank"
             whileHover={{ x: -3 }}
           >
-            <FaExternalLinkAlt /> Visit site
+            <FaExternalLinkAlt /> Visitar web
           </LiveLink>
           <GithubLink 
             href={project.github} 
             target="_blank"
             whileHover={{ x: 3 }}
           >
-            <FaGithub /> Not available
+            <FaGithub /> No disponible
           </GithubLink>
         </ProjectLinks>
       </CardContent>

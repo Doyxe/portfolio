@@ -42,10 +42,10 @@ const Sidebar = () => {
 
   const navItems = [
     { icon: <FaHome />, text: "Inicio", path: "#hero" },
-    { icon: <FaUserAlt />, text: "About Me", path: "#about" },
-    { icon: <FaTools />, text: "Services", path: "#services" },
-    { icon: <FaProjectDiagram />, text: "Projects", path: "#projects" },
-    { icon: <FaEnvelope />, text: "Contact Me", path: "#contact" }
+    { icon: <FaUserAlt />, text: "Sobre Mí", path: "#about" },
+    { icon: <FaTools />, text: "Servicios", path: "#services" },
+    { icon: <FaProjectDiagram />, text: "Proyectos", path: "#projects" },
+    { icon: <FaEnvelope />, text: "Contacta Conmigo", path: "#contact" }
   ];
 
   return (

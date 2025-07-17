@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const AboutMeButton = ({ text = "Contact Me", onClick }) => {
+const AboutMeButton = ({ text = "Contáctame", onClick }) => {
   return (
     <StyledButton onClick={onClick}>
       {text}

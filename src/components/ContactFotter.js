@@ -18,7 +18,7 @@ const ContactFooter = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          CONTACT ME
+          CONTÁCTAME
         </motion.h1>
 
         <StyledWrapper>
@@ -26,7 +26,7 @@ const ContactFooter = () => {
             <span className="circle" aria-hidden="true">
               <span className="icon arrow" />
             </span>
-            <span className="button-text">Hire Me</span>
+            <span className="button-text">Contrátame</span>
           </button>
         </StyledWrapper>
 

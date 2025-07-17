@@ -25,12 +25,18 @@ const Hero = () => {
         <HeroInner>
           <h1 className="hero-title">
             <BlurText
-              text="Hi, I'm Nico,"
+              text="Hola, soy Nico,"
               delay={150}
               animateBy="words"
               direction="top"
             />
             {" "}
+            <BlurText
+              text="Desarrollador"
+              delay={150}
+              animateBy="words"
+              direction="top"
+            />
             <TrueFocus
               sentence="Full-stack"
               manualMode={false}
@@ -41,16 +47,11 @@ const Hero = () => {
               pauseBetweenAnimations={1}
             />
             {" "}
-            <BlurText
-              text="Developer"
-              delay={150}
-              animateBy="words"
-              direction="top"
-            />
+          
           </h1>
 
           <p className="hero-subtitle">
-            I help entrepreneurs and small businesses bring their digital ideas to life with fast, clean and scalable web solutions.
+            Ayudo a emprendedores y pymes a hacer realidad sus ideas digitales con soluciones web rápidas, limpias y escalables.
           </p>
 
           <ButtonCTAHero />

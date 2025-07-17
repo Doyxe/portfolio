@@ -28,7 +28,7 @@ const AboutMe = () => {
 
         <AboutText>
           <SplitText
-            text="About Me"
+            text="Sobre Mí"
             className="about-title"
             delay={80}
             duration={0.6}
@@ -41,7 +41,7 @@ const AboutMe = () => {
           />
 
           <SplitText
-            text="👋 Hi! I'm Nico, a Full Stack Developer passionate about building modern, scalable, and clean web solutions. I love helping small businesses and entrepreneurs bring their ideas to life through intuitive, user-friendly interfaces and solid backend logic. My mission is to make the web more accessible — one fast, beautiful, and functional site at a time."
+            text="👋 Hola, soy Nico, desarrollador Full‑Stack apasionado por crear soluciones web modernas, escalables y depuradas. Me gusta ayudar a pymes y emprendedores a materializar sus ideas con interfaces intuitivas y una lógica de backend robusta. Mi meta es hacer la web más accesible: un sitio rápido, atractivo y funcional."
             className="about-description"
             delay={25}
             duration={0.6}

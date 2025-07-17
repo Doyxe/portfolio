@@ -14,37 +14,37 @@ const WorkProcess = () => {
   const processSteps = [
     {
       id: 1,
-      title: "Discovery & Research",
+      title: "Descubrimiento e investigación",
       icon: <FiSearch />,
-      description: "I conduct in-depth market analysis and user research to establish project foundations. This includes competitor benchmarking, user persona development, and technical feasibility studies.",
+      description: "Realizo análisis de mercado exhaustivos y estudios de usuario para establecer las bases del proyecto. Esto incluye análisis comparativo de la competencia, desarrollo de perfiles de usuario y estudios de viabilidad técnica.",
       color: "#3d3aa5"
     },
     {
       id: 2,
-      title: "Strategic Planning",
+      title: "Planteamiento Estratégico",
       icon: <FaRegLightbulb />,
-      description: "I create comprehensive documentation including sitemaps, wireframes, and technology proposals. This phase ensures alignment on objectives before development begins.",
+      description: "Creo documentación integral que incluye mapas de sitio, wireframes y propuestas tecnológicas. Esta fase garantiza la alineación de los objetivos antes de iniciar el desarrollo.",
       color: "#3d3aa5"
     },
     {
       id: 3,
-      title: "Interface Design",
+      title: "Diseño de Interfaz",
       icon: <FiLayers />,
-      description: "I transform concepts into high-fidelity prototypes using Figma, focusing on intuitive navigation and responsive layouts. Design systems ensure visual consistency across all components.",
+      description: "Transformo conceptos en prototipos de alta fidelidad usando Figma, con énfasis en navegación intuitiva y diseños responsivos. Los sistemas de diseño garantizan consistencia visual en todos los componentes.",
       color: "#3d3aa5"
     },
     {
       id: 4,
-      title: "Development Phase",
+      title: "Fase de desarrollo",
       icon: <FiCode />,
-      description: "Using modern frameworks like Next.js, I build performant frontend architectures with scalable backend services. All code is modular, documented, and version-controlled with Git.",
+      description: "Usando frameworks modernos como React.js, Construyo arquitecturas frontend de alto rendimiento con servicios backend escalables. Todo el código es modular, está documentado y se gestiona con control de versiones en Git.",
       color: "#3d3aa5"
     },
     {
       id: 5,
-      title: "Deployment",
+      title: "Despliegue",
       icon: <FiUpload />,
-      description: "After rigorous cross-browser testing, I deploy with performance monitoring in place. Post-launch analytics and iterative optimizations ensure continuous improvement.",
+      description: "Después de realizar pruebas exhaustivas en distintos navegadores, despliego con monitorización de rendimiento activa. El análisis post-lanzamiento y las optimizaciones iterativas aseguran una mejora continua.",
       color: "#3d3aa5"
     }
   ];
@@ -58,7 +58,7 @@ const WorkProcess = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          My Development Process
+          Proceso de Desarrollo
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ const WorkProcess = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          A streamlined workflow for exceptional digital products
+          Flujo de trabajo optimizado para productos digitales excepcionales
         </motion.p>
       </SectionHeader>
 
