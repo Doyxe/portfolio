@@ -65,55 +65,51 @@ const Hero = () => {
 
 const HeroContainer = styled.section`
   position: relative;
-  min-height: 100vh;
-  padding-left: ${({ $isSidebarOpen }) => $isSidebarOpen ? 'calc(280px + 2rem)' : 'calc(80px + 2rem)'};
-  padding-right: 2rem;
+  height: 100vh;
+  width: 100%;
+  padding-left: ${({ $isSidebarOpen }) =>
+    $isSidebarOpen ? "calc(280px + 1.5rem)" : "calc(80px + 1.5rem)"};
+  padding-right: 1.5rem;
   transition: padding-left 0.3s ease;
   overflow: hidden;
-  color: white;
-  display: flex; /* Añadido para que HeroContent pueda tomar el 100% de altura */
-  flex-direction: column; /* Asegura que los elementos se apilen si hay más */
-  justify-content: center; /* Centra verticalmente el contenido dentro de HeroContainer */
-  align-items: center; /* Centra horizontalmente el contenido dentro de HeroContainer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
 
   @media (max-width: 768px) {
-    padding-left: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .orb-container {
     position: absolute;
-    top: 0;
-    right: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     z-index: 0;
   }
 `;
 
 const HeroContent = styled.div`
-  display: flex;
-  align-items: center; /* Centra verticalmente los ítems hijos */
-  justify-content: center; /* Centra horizontalmente los ítems hijos */
-  min-height: 100vh; /* Asegura que HeroContent ocupa toda la altura disponible */
-  width: 100%; /* Asegura que HeroContent ocupa todo el ancho disponible */
+  position: relative;
   z-index: 2;
-  /* Elimina el padding-left/right de aquí si quieres que HeroContainer lo maneje */
-  /* Si quieres el padding solo en el contenido, mantenlo y ajusta HeroContainer */
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 `;
 
 const HeroInner = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center; /* Cambiado a center para centrar horizontalmente */
-  text-align: center; /* Cambiado a center para centrar el texto */
-  max-width: 900px;
+  align-items: center;
+  text-align: center;
   gap: 2rem;
-  width: 100%; /* Asegura que HeroInner pueda ocupar el ancho del HeroContent */
-
-  /* Media query para móviles ya no es tan necesario si HeroInner ya está centrado por defecto */
-  @media (max-width: 768px) {
-    /* Puedes mantener esto si quieres un comportamiento diferente en móviles */
-    /* align-items: center; */
-    /* text-align: center; */
-  }
+  width: 100%;
 
   .hero-title {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
@@ -123,15 +119,17 @@ const HeroInner = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    justify-content: center; /* Añadido para centrar los elementos del título */
+    justify-content: center;
   }
 
   .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     line-height: 1.6;
     opacity: 0.9;
     margin: 0;
+    max-width: 600px;
   }
 `;
+
 
 export default Hero;
