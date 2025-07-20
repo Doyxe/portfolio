@@ -137,11 +137,14 @@ const Wrapper = styled.section`
   padding: 6rem 2rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
   }
 
   .header {
@@ -171,9 +174,11 @@ const Wrapper = styled.section`
 
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 320px));
+    justify-content: center;
     gap: 2rem;
     align-items: start;
+    width: 100%;
   }
 
   .service-card {
@@ -186,6 +191,9 @@ const Wrapper = styled.section`
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
 
     &:hover {
       border-color: #4facfe;
@@ -268,15 +276,47 @@ const Wrapper = styled.section`
 
   @media (max-width: 768px) {
     padding: 4rem 1.5rem;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
 
-    .header h2 {
-      font-size: 2.2rem;
+    .header {
+      margin-bottom: 3rem;
+
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
     }
 
     .services-grid {
       grid-template-columns: 1fr;
+      place-items: center;
+    }
+
+    .service-card {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .service-card {
+      padding: 1.2rem;
+    }
+
+    .card-header h3 {
+      font-size: 1.1rem;
+    }
+
+    .card-details ul li {
+      font-size: 0.9rem;
     }
   }
 `;
+
 
 export default WhatIDo;
